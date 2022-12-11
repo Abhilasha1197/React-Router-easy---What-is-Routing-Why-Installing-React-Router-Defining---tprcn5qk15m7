@@ -4,11 +4,13 @@ import { Index } from './Pages/Index';
 
 export const AppRoutes = () => {
     return (
+        <div>
         <Routes>
             <Route path = "/" element ={<Index />} />
            <Route path="/home" element={<Home />} />
            <Route path='*' element={<NotFound />}/>
     
         </Routes>
+        </div>
     )
 }
