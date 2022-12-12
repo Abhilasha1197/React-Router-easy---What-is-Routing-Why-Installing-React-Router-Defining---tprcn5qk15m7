@@ -1,19 +1,18 @@
 import React from 'react';
-import React from 'react-router-dom';
-import {BrowserRouter, Routes,Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Home } from './Pages/Home';
 import { Index } from './Pages/Index';
-import {Home} from './Pages/Home';
 import { NotFound } from './Pages/NotFound';
 
 export const AppRoutes = () => {
     return (
-        <div>
-        <Routes>
-            <Route path = "/" element ={<Index />} />
-           <Route path="/home" element={<Home />} />
-           <Route path='*' element={<NotFound />}/>
+<div>
+       <Routes>
+          <Route path='/' element={<Index/>} />
+           <Route path='/home' element={<Home/>}/>
+           <Route path='*' element={<NotFound/>} />
     
-        </Routes>
-        </div>
+       </Routes>
+</div>
     )
 }
